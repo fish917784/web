@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>金門景點介紹</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/aboutstyles.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#!" style="font-size: 24px;">金門景點介紹</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">首頁</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="../about1.html">關於</a></li>
+                <li class="nav-item"><a class="nav-link" href="../about1.html">作者</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 鄉鎮信息部分 -->
+<section id="township1" class="township-info">
+    <div class="container my-5">
+        <h2>金湖鎮(林務所)</h2>
+        <div class="township-info-content" style="display: flex; align-items: flex-start;">
+            <!-- 海印寺的圖片和介紹 -->
+            <div style="flex: 1;">
+                <img src="../img/aboutimg/jh2.png" alt="金門林務所" width="400" style="margin-right: 20px;">
+                <div style="font-size: 20px;">
+                    <h4>景點介紹</h4>
+                    <p>位於金門金沙鎮的林務所，是金門地區充滿綠意的景點。相傳早期的金門是座草木繁盛之地，但因明朝鄭成功攻克金門時大肆砍伐樹木，使金門變成不毛之地。西元1951年，政府為改善環境，推動綠美化政策，歷經多次失敗與改良後，終於奠定了金門的綠化基礎，改善了軍民的生活環境。</p>
+                    <p>現今的金門林務所，佔地約36公頃，前身為小徑苗圃，專責農藝作物、育苗造林及畜牧事業的試驗及研究推廣。園內設有草皮廣場區、觀光苗圃、花卉花圃、親水區、標本區、林業陳列館、兒童遊憩區及烤肉區等，另有全長500公尺的松林大道，環境優美，非常適合親子遊玩。</p>
+                    <p>此外，林務所內有許多吸睛的裝置藝術，如大型木馬、七彩椅子及荷蘭風車等，讓踏青的民眾在享受綠意之餘，還能拍美照留下美好回憶。林務所內的木育互動學習館是孩子們的快樂天堂，提供超過20種木造桌遊及大型古厝模型，讓孩子們從玩樂中認識古厝並提升專注力。</p>
+                    <h4>景點資訊</h4>
+                    <ul>
+                        <li>管理單位：金門縣林務所</li>
+                        <li>電話：+886-82-352846</li>
+                        <li>傳真：+886-82-330488</li>
+                        <li>地址：金門縣金沙鎮大洋里東山31號</li>
+                        <li>開放時間：每日08:00-17:30</li>
+                        <li>門票資訊：免費</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 其他景點連結 -->
+            <div class="sidebar" style="width: 400px; height: 550px; background-color: #f0f0f0; padding: 20px;">
+                <h3 style="font-size: 24px; text-align: left;">其他景點連結：</h3>
+                <ul>
+                    <li><a href="websitejh1.html" style="font-size: 20px;">海印寺</a></li>
+                    <li><a href="websitejh3.html" style="font-size: 20px;">太湖</a></li>
+                    <li><a href="../about1.html" style="font-size: 20px;">回上一頁</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">版權所有 &copy; 2023 您的網站</p></div>
+</footer>
+<!-- Bootstrap核心JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- 核心主題JS-->
+<script src="js/scripts.js"></script>
+
+<script>
+    function showTownshipInfo(townshipId) {
+        // 隱藏所有鄉鎮信息部分
+        var townshipInfoSections = document.querySelectorAll('.township-info');
+        townshipInfoSections.forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        // 顯示所選鄉鎮信息部分
+        var selectedTownshipInfo = document.getElementById(townshipId);
+        if (selectedTownshipInfo) {
+            selectedTownshipInfo.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>

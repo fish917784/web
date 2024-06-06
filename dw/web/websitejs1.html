@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>金門景點介紹</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/aboutstyles.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#!" style="font-size: 24px;">金門景點介紹</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">首頁</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="../about1.html">關於</a></li>
+                <li class="nav-item"><a class="nav-link" href="../about1.html">作者</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 鄉鎮信息部分 -->
+<section id="township1" class="township-info">
+    <div class="container my-5">
+        <h2>金沙鎮(馬山觀測所)</h2>
+        <div class="township-info-content" style="display: flex; align-items: flex-start;">
+            <div style="flex: 1;">
+                <img src="../img/aboutimg/js1.png" alt="馬山" width="400" style="margin-right: 20px;">
+                <div style="font-size: 20px;">
+                    位於金沙鎮的馬山，距對岸的角嶼僅2,100公尺，退潮時更只有1,800公尺，是金廈兩岸最靠近的據點，在過去是觀測對岸海上活動的軍事要塞，有「天下第一哨」之稱。
+                    進入觀測所大門後，會通過一段的戰備坑道，坑道內設有槍堡等軍事設施，天候佳時福建的鴻漸山清晰可見，讓過去的軍事印象重現眼前，成為熱門的觀光景點！
+                </div>
+                <h4>馬山播音站</h4>
+                <div style="font-size: 20px;">
+                    位在進入馬山觀測所路旁的馬山播音站，與古寧頭北山播音站相同，是對大陸心戰喊話的第一線，在地人俗稱為喊話站。已故歌星鄧麗君，也曾二度於馬山播音站向對岸廣播。隨著時代的變遷，心戰喊話現在已經沒有必要，只偶爾會播放流行音樂及台語歌曲。
+                <h4>景點資訊</h4>
+                <ul>
+                    <li>管理單位：金門國家公園管理處</li>
+                    <li>電話：+886-82-330086</li>
+                    <li>地址：金門縣金沙鎮官澳東北角</li>
+                    <li>開放時間：星期日至星期六：08:30 – 17:00</li>
+                    <li>門票資訊：免費</li>
+                </ul>
+                </div>
+            </div>
+            <!-- 其他景點連結 -->
+            <div class="sidebar" style="width: 400px; height: 550px; background-color: #f0f0f0; padding: 20px;">
+                <h3 style="font-size: 24px; text-align: left;">其他景點連結：</h3>
+                <ul>
+                    <li><a href="websitejs2.html" style="font-size: 20px;">沙美老街摩洛哥</a></li>
+                    <li><a href="websitejs3.html" style="font-size: 20px;">獅山砲陣地</a></li>
+                    <li><a href="../about1.html" style="font-size: 20px;">回上一頁</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">版權所有 &copy; 2023 您的網站</p></div>
+</footer>
+<!-- Bootstrap核心JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- 核心主題JS-->
+<script src="js/scripts.js"></script>
+
+<script>
+    function showTownshipInfo(townshipId) {
+        // 隱藏所有鄉鎮信息部分
+        var townshipInfoSections = document.querySelectorAll('.township-info');
+        townshipInfoSections.forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        // 顯示所選鄉鎮信息部分
+        var selectedTownshipInfo = document.getElementById(townshipId);
+        if (selectedTownshipInfo) {
+            selectedTownshipInfo.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>
