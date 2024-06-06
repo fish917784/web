@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>AR物件測試</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <script defer="defer" src="model_viewer.js"></script>
+    <link href="model_viewer.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+        }
+        #left-arrow {
+            left: 2vw;
+        }
+        #right-arrow {
+            right: 2vw;
+        }
+        model-viewer {
+            width: 100%;
+            height: 100%;
+        }
+        p {
+            position: absolute;
+            bottom: 6vw;
+            left: 6vw;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <model-viewer id="model-viewer" alt="QMIMI" src="model/vase.glb" ar environment-image="studio2k.hdr" poster="images/mvt.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+        <button id="left-arrow" class="arrow">&larr;</button>
+        <button id="right-arrow" class="arrow">&rarr;</button>
+        <p>AR物件測試</p>
+    </div>
+    <script>
+        const models = ['model/vase.glb', 'model/a1.glb'];
+        let currentIndex = 0;
+
+        const modelViewer = document.getElementById('model-viewer');
+        const leftArrow = document.getElementById('left-arrow');
+        const rightArrow = document.getElementById('right-arrow');
+
+        leftArrow.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : models.length - 1;
+            modelViewer.src = models[currentIndex];
+        });
+
+        rightArrow.addEventListener('click', () => {
+            currentIndex = (currentIndex < models.length - 1) ? currentIndex + 1 : 0;
+            modelViewer.src = models[currentIndex];
+        });
+    </script>
+</body>
+</html>
