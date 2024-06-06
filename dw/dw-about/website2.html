@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>金門景點介紹</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="dw-about/assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/Users/chenshengjie/dw/dw-about/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#!" style="font-size: 24px;">金門景點介紹</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="/Users/chenshengjie/dw/dw-index/index.html">首頁</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/Users/chenshengjie/dw/dw-about/about1.html">關於</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Users/chenshengjie/dw/dw-author/index.html">作者</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 鄉鎮信息部分 -->
+<section id="township1" class="township-info">
+    <div class="container my-5">
+        <h2>金城鎮(翟山坑道)</h2>
+        <div class="township-info-content" style="display: flex; align-items: flex-start;">
+            <!-- 莒光樓的圖片和介紹 -->
+            <div style="flex: 1;">
+                <div style="flex: 1;">
+                    <img src="/Users/chenshengjie/dw/dw-about/image/jc2.png" alt="翟山坑道" width="400" style="margin-right: 20px;">
+                    <div style="font-size: 20px;">
+                            循階梯而下，走進翟山坑道幽暗的光線裡，鬼斧神工的軍事傑作就在眼前，坑道盡頭接引著深不見底的海水，在炎熱的夏季裡替旅人們帶來一些清涼。
+                            翟山坑道內，既長而寬闊的坑道及水道兩區域，是八二三砲戰期間，動員無數人力、耗費五年時間，才辛苦鑿出這條能夠容納42艘水道小艇進出、迴轉的極大的工程，又被譽為「地下金門」傑作之一。隨著海面晃動的倒影前行，不由得對戰時國軍弟兄的努力感到震撼。走出坑道外，陳列著各式登陸小艇以及防空武器，也是曾經的軍事記憶，值得前往駐足留影。
+                        </div>
+                        <h4>景點資訊</h4>
+                        <ul>
+                            <li>管理單位：金門國家公園管理處</li>
+                            <li>電話：+886-82-313241</li>
+                            <li>地址：金門縣金城鎮古崗湖東南方翟山腹</li>
+                            <li>開放時間：</li>
+                            <li>星期日至星期六：08:30 – 17:00</li>
+                            <li>門票資訊：免費</li>
+                        </ul>
+                </div>
+            </div>
+            <!-- 其他景點連結 -->
+            <div class="sidebar" style="width: 400px; height: 550px; background-color: #f0f0f0; padding: 20px;">
+                <h3 style="font-size: 24px; text-align: left;">其他景點連結：</h3>
+                <ul>
+                    <li><a href="website1.html" style="font-size: 20px;">莒光樓</a></li>
+                    <li><a href="website3.html" style="font-size: 20px;">模範街</a></li>
+                    <li><a href="about1.html" style="font-size: 20px;">回上一頁</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">版權所有 &copy; 2023 您的網站</p></div>
+</footer>
+<!-- Bootstrap核心JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- 核心主題JS-->
+<script src="js/scripts.js"></script>
+
+<script>
+    function showTownshipInfo(townshipId) {
+        // 隱藏所有鄉鎮信息部分
+        var townshipInfoSections = document.querySelectorAll('.township-info');
+        townshipInfoSections.forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        // 顯示所選鄉鎮信息部分
+        var selectedTownshipInfo = document.getElementById(townshipId);
+        if (selectedTownshipInfo) {
+            selectedTownshipInfo.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>

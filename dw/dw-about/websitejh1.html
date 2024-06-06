@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>金門景點介紹</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="dw-about/assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/Users/chenshengjie/dw/dw-about/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#!" style="font-size: 24px;">金門景點介紹</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="/Users/chenshengjie/dw/dw-index/index.html">首頁</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/Users/chenshengjie/dw/dw-about/about1.html">關於</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Users/chenshengjie/dw/dw-author/index.html">作者</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 鄉鎮信息部分 -->
+<section id="township1" class="township-info">
+    <div class="container my-5">
+        <h2>金湖鎮(海印寺)</h2>
+        <div class="township-info-content" style="display: flex; align-items: flex-start;">
+            <!-- 海印寺的圖片和介紹 -->
+            <div style="flex: 1;">
+                <img src="/Users/chenshengjie/dw/dw-about/image/jh1.png" alt="海印寺" width="400" style="margin-right: 20px;">
+                <div style="font-size: 20px;">
+                    <h4>景點介紹</h4>
+                    <p>海印寺建於宋朝，擁有800多年的歷史。由於位於太武山頂坳處，古時被稱作太武巖寺。太武山形狀如仰臥的隱士，民間形容其為「仙人偃地」，被視為靈氣之地，而建於其上的海印寺更是香火鼎盛。每逢正月初九「天公生」，金門居民都會扶老攜幼上山至海印寺拜拜，這也是金門重要的宗教節慶活動。</p>
+                    <p>海印寺左右有鐘鼓樓，分別名為龍樓和鳳閣，寺前有蘸月池，其山泉水清澈甘冽。鐘樓中的大銅鐘重逾750公斤，據說「鐘聲可聞30里」。遊客來到海印寺，主要是為了一窺篆有「海山第一」的石門關，還有傳說中孕有龍脈、能安寧人心的安心石。</p>
+                    <h4>景點資訊</h4>
+                    <ul>
+                        <li>管理單位：海印寺</li>
+                        <li>電話：+886-82-334703</li>
+                        <li>電子郵件：km334703@yahoo.com.tw</li>
+                        <li>地址：金門縣金湖鎮太武山上(玉章路往太武山方向)</li>
+                        <li>開放時間：每日08:00-17:30</li>
+                        <li>門票資訊：免費</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 其他景點連結 -->
+            <div class="sidebar" style="width: 400px; height: 550px; background-color: #f0f0f0; padding: 20px;">
+                <h3 style="font-size: 24px; text-align: left;">其他景點連結：</h3>
+                <ul>
+                    <li><a href="websitejh2.html" style="font-size: 20px;">林務所</a></li>
+                    <li><a href="websitejh3.html" style="font-size: 20px;">太湖</a></li>
+                    <li><a href="about1.html" style="font-size: 20px;">回上一頁</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">版權所有 &copy; 2023 您的網站</p></div>
+</footer>
+<!-- Bootstrap核心JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- 核心主題JS-->
+<script src="js/scripts.js"></script>
+
+<script>
+    function showTownshipInfo(townshipId) {
+        // 隱藏所有鄉鎮信息部分
+        var townshipInfoSections = document.querySelectorAll('.township-info');
+        townshipInfoSections.forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        // 顯示所選鄉鎮信息部分
+        var selectedTownshipInfo = document.getElementById(townshipId);
+        if (selectedTownshipInfo) {
+            selectedTownshipInfo.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>

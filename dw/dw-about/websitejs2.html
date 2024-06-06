@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>金門景點介紹</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="dw-about/assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/Users/chenshengjie/dw/dw-about/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#!" style="font-size: 24px;">金門景點介紹</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="/Users/chenshengjie/dw/dw-index/index.html">首頁</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/Users/chenshengjie/dw/dw-about/about1.html">關於</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Users/chenshengjie/dw/dw-author/index.html">作者</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 鄉鎮信息部分 -->
+<section id="township1" class="township-info">
+    <div class="container my-5">
+        <h2>金沙鎮(沙美老街摩洛哥)</h2>
+        <div class="township-info-content" style="display: flex; align-items: flex-start;">
+            <!-- 沙美摩洛哥的圖片和介紹 -->
+            <div style="flex: 1;">
+                <img src="/Users/chenshengjie/dw/dw-about/image/js2.png" alt="沙美摩洛哥" width="400" style="margin-right: 20px;">
+                <div style="font-size: 20px;">
+                    <h4>景點介紹</h4>
+                    <p>
+                        沙美摩洛哥是一座獨特的建築，位於金門的沙美老街。這座建築呈現出中東摩洛哥的風格，沙黃色的外觀讓人仿佛置身於沙漠之中，充滿了神祕和異國情調。這裡成為了年輕人必訪的熱門打卡點，每個角度都能拍出令人驚艷的照片。
+                    </p>
+                    <p>
+                        沙美老街是金門歷史最悠久的市街之一，舊稱八卦街。這裡曾是金門最熱鬧的地方，軍人和居民都會來這裡採買生活用品、觀看電影。如今，沙美老街仍然保留著許多傳統風味的小吃和古老的建築，讓人感受到濃厚的傳統氛圍。
+                    </p>
+                    <p>
+                        相較於其他地區，沙美地區保存了更多的傳統和日常風情。走在老街上，仿佛能夠感受到時間的倒流，看到斑駁的建築、老式的招牌以及傳統的美食，如口感酥脆的燒餅、餛飩加料等，吸引了許多食客前來品嘗。
+                    </p>
+                    <p>
+                        此外，57吳騏創作的三面壁畫也是沙美地區的一大景點。這些壁畫以夢獸和金門的文化元素為主題，展現了對家鄉的熱愛和對夢想的追求。
+                    </p>
+                    <p>
+                        另外，張文帝洋樓也是沙美地區的一處古建築，由馬來西亞華僑張文帝興建。這座洋樓建於1936年，外觀浮雕裝飾雅致，特別之處在於二樓左右的大房間設有廁所，是金門地區罕見的設計。
+                    </p>
+
+                    <h4>景點資訊</h4>
+                    <ul>
+                        <li>地址：金門縣金沙鎮信義路周圍</li>
+                        <li>開放時間：全天</li>
+                        <li>門票資訊：免費</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 其他景點連結 -->
+            <div class="sidebar" style="width: 400px; height: 550px; background-color: #f0f0f0; padding: 20px;">
+                <h3 style="font-size: 24px; text-align: left;">其他景點連結：</h3>
+                <ul>
+                    <li><a href="websitejs1.html" style="font-size: 20px;">馬山觀測所</a></li>
+                    <li><a href="websitejs3.html" style="font-size: 20px;">獅山砲陣地</a></li>
+                    <li><a href="about1.html" style="font-size: 20px;">回上一頁</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">版權所有 &copy; 2023 您的網站</p></div>
+</footer>
+<!-- Bootstrap核心JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- 核心主題JS-->
+<script src="js/scripts.js"></script>
+
+<script>
+    function showTownshipInfo(townshipId) {
+        // 隱藏所有鄉鎮信息部分
+        var townshipInfoSections = document.querySelectorAll('.township-info');
+        townshipInfoSections.forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        // 顯示所選鄉鎮信息部分
+        var selectedTownshipInfo = document.getElementById(townshipId);
+        if (selectedTownshipInfo) {
+            selectedTownshipInfo.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>
