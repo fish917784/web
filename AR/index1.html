@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AR物件測試</title>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
     <script defer="defer" src="model_viewer.js"></script>
     <link href="model_viewer.css" rel="stylesheet">
 </head>
 <body>
-    <model-viewer alt="QMIMI" src="vase.glb" ar environment-image="studio2k.hdr" poster="images/mvt.png" shadow-intensity="1" camera-controls touch-action="pan-y" style="width: 100svw; height: 100svh;"></model-viewer>
-    <p style="position: absolute; bottom: 6vw; left: 6vw;">Model-Viewer</p>
+    <model-viewer alt="QMIMI" src="model/vase.glb" ar environment-image="studio2k.hdr" poster="images/mvt.png" shadow-intensity="1" camera-controls touch-action="pan-y" class="fullscreen-viewer"></model-viewer>
+    <p class="positioned-text">Model-Viewer</p>
 </body>
 </html>
